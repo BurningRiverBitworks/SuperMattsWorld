@@ -1,0 +1,31 @@
+#beginning story slide 3
+
+[level]
+#name width height default_block_type background
+story_begin_slide3 455 320 tech_tiles
+
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_test
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+-32 0 32 400 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -100 0
+
+
+[jump]
+# x y width height goto label
+-400 368 655 32 lvl_test start
+
+[text]
+# x y color size TEXT
+200 40 red 20 MUWAHAHAHAHA....
+
+

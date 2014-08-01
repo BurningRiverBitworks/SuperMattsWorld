@@ -1,0 +1,58 @@
+# Example of .lvl game level description file
+
+# Requirements
+# level name, level width and height ...
+# x, y measured from top left corner of level
+
+[level]
+#name width height default_block_type background
+lvl_test2 2000 400 tech_tiles
+
+[music]
+#name
+death1
+
+[time]
+#in seconds (to complete)
+45
+
+[middle_ground]
+# types randomness [0 100] 
+umbrella 0
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+0 388 2000 16 tech_tiles
+100 200 400 16 tech_tiles
+800 376 16 16 tech_tiles
+900 376 16 16 tech_tiles
+
+[moving_block]
+#init x, init y, width, height, max_x_from_init, max_y_from_init, horiz_speed, vert_speed ... optionals: type
+500 100 100 16 0 200 0 1 tech_tiles
+
+#[hurt_block]
+# x, y, width, height, painlevel ... optionals: type
+
+[death_block]
+# x, y, width, height ... optionals: type
+100 375 48 16 water
+
+[enemy]
+#x, y, speed, type
+850 240 fish
+
+[label]
+#name x y  ... start is required
+start 25 240
+
+#[jump]
+# x y width height goto label
+#100 50 10 1000 storyboard1
+#2000 50 100 100 level2.start
+#1500 1000 10 10 level3.door1
+
+
+#[powerup]
+# x y type
+#need list of power ups!!

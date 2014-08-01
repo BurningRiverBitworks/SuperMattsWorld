@@ -1,0 +1,34 @@
+#beginning story slide 1
+
+[level]
+#name width height default_block_type background
+story_begin_slide1 455 320 tech_tiles
+
+
+[music]
+level1_music
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_matt_beach
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+-32 0 32 400 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -100 0
+
+
+[jump]
+# x y width height goto label
+-400 368 655 32 story_begin_slide2 start
+
+[text]
+# x y color size TEXT
+0 30 White 20 I finally graduated!
+0 60 white 20 Time to kick back and enjoy a fine brew.
+

@@ -1,0 +1,196 @@
+# Example of .lvl game level description file
+
+# Requirements
+# level name, level width and height ...
+# x, y measured from top left corner of level
+
+
+[level]
+#name width height default_block_type background
+lvl_test 8000 464 sand
+
+
+
+
+# TG 4-2-2010 Added music back in
+[music]
+level1_music
+
+[time]
+30
+
+[background]
+# x, y, width, height type
+0 -20 8000 900 background_beach
+
+[middle_ground]
+# x, y, width, height type
+#page 1
+0 352 96 64 tiki_bar
+170 352 64 64 umbrella
+352 352 64 64 palm_tree
+50 200 64 64 cloud_large
+620 50 32 32 cloud
+#page 2
+1120 70 64 64 cloud_large
+1080 352 64 64 palm_tree
+#page 3
+1580 100 32 32 cloud
+1652 353 64 64 umbrella
+1990 60 64 64 cloud_large
+#page 4
+#page 5
+2800 50 32 32 cloud
+#page 6
+4085 384 64 32 car
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+#page 1
+0 416 640 200
+256 352 32 64
+448 320 64 96 rock
+#page 2
+640 416 640 200
+912 224 96 192
+1168 384 32 32
+1248 384 32 32
+#page 3
+1280 416 144 200
+1392 352 32 64 rock
+1520 416 400 200  
+1520 288 48 128
+1728 384 32 32
+1824 256 96 160
+1824 240 16 16
+1904 240 16 16
+#page 4
+1920 416 96 160
+2064 432 16 32
+2064 416 16 16 rock
+2160 432 32 32
+2160 416 32 16 rock 
+2272 448 160 200
+2272 336 16 112
+2336 336 96 112
+#page 5
+2688 416 48 64
+2880 304 128 200
+2880 288 16 16
+3008 208 64 400
+3072 416 128 200
+#page 6
+3200 416 64 200
+3248 400 16 16 rock
+3360 416 32 200
+3360 400 32 16 rock
+3488 416 353 200 rock
+3600 336 240 80 
+3664 128 144 208
+3456 192 32 16 rock
+#- TG beer block
+3300 200 32 32 rock
+#- End of Level (EOL)
+3808 416 480 200  rock
+4288 0 16 616 rock
+
+[moving_block]
+#init x, init y, width, height, max_x_from_init, max_y_from_init, horiz_speed, vert_speed ... optionals: type
+#page 1
+544 240 64 16 304 0 3 0 rock
+#page 2
+1200 288 48 32 0 96 0 1 rock
+#page 3
+#page 4
+2496 336 64 16 160 0 3 0 rock
+#page 5
+2720 338 64 16 96 0 3 0 rock
+#page 6
+3424 336 32 32 96 0 3 0 rock
+# Crazy diagonal block
+3456 288 32 16 64 -64 3 3 rock
+3488 128 32 16 176 0 3 0 rock
+
+[hurt_block]
+# x, y, width, height, painlevel ... optionals: type
+
+
+[death_block]
+# x, y, width, height ... optionals: type
+#page 3
+1424 448 96 96 water
+#page 4
+2016 448 256 16 water
+2432 448 128 16 water
+#page 5
+2560 448 320 100 water
+#page 6
+3264 448 224 100 water
+3264 432 96 16 flame
+3392 432 96 16 flame
+
+
+[enemy]
+#GH 4-7-10 enemies now have a new format. 
+#currently available values for type would be fish, beach_goer, student and teacher
+#x, y, type
+#page 1
+416 368 fish
+576 368 fish
+#page 2
+736 384 fish
+#page 3
+#GH 4-7-10 set these to student an teacher rather than fish just as an example for now
+1616 384 beach_goer
+1664 384 beach_goer
+1840 224 fish
+#page 4
+2160 384 fish
+2336 304 fish
+#page 5
+2896 272 fish 
+2960 272 fish
+3040 176 fish
+3104 384 fish
+#page 6
+3568 384 fish
+3696 96 fish
+
+[label]
+#name x y  ... start is required
+start 32 384
+test 256 288
+testtwo 450 200
+
+
+[jump]
+# x y width height goto label
+80 384 32 32 lvl_story_test start
+#300 384 32 32 lvl_story_test3 start
+200 200 16 16 lvl_story_test2 start
+4085 384 64 32 lvl_jump_test start
+
+[power_up]
+# x y type
+#page 1
+256 320 cigarette
+272 320 cigarette
+#page 2
+992 208 cigarette
+1216 400 beer
+#page 3
+1520 272 cigarette
+1552 272 cigarette
+#page 4
+2064 400 cigarette
+2304 432 beer
+#page 5
+2704 400 cigarette
+2720 400 cigarette
+#page 6
+3360 384 cigarette
+3372 384 cigarette
+3300 184 beer
+3456 176 cigarette
+3472 176 cigarette
+

@@ -1,0 +1,34 @@
+#beginning story slide 2
+
+[level]
+#name width height default_block_type background
+story_begin_slide2 455 320 tech_tiles
+
+
+[music]
+level1_music
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_dave_phone
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+-32 0 32 400 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -100 0
+
+
+[jump]
+# x y width height goto label
+-400 368 655 32 story_begin_slide3 start
+
+[text]
+# x y color size TEXT
+200 40 black 20 WHY IS DAVE CALLING ME?
+200 80 black 16 He knows I'm on vacation...
+

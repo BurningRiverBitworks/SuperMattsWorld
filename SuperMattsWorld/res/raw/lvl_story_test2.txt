@@ -1,0 +1,40 @@
+# Example of .lvl game level description file
+
+# Requirements
+# level name, level width and height ...
+# x, y measured from top left corner of level
+
+[level]
+#name width height default_block_type background
+lvl_story_test2 455 320 tech_tiles
+
+# TG 4-2-2010 Added music back in
+[music]
+death2
+
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_test2
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+#-100 400 655 16 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -100 0
+
+
+[jump]
+# x y width height goto label
+#-200 368 655 32 lvl_test testtwo
+-200 368 655 32 lvl_test testtwo
+
+[text]
+# x y color size TEXT
+0 30 Red 32 I must save the day!
+30 100 Purple 20 To the School!
+

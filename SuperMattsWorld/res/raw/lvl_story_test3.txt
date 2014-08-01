@@ -1,0 +1,42 @@
+# Example of .lvl game level description file
+
+# Requirements
+# level name, level width and height ...
+# x, y measured from top left corner of level
+
+[level]
+#name width height default_block_type background
+lvl_story_test3 455 650 tech_tiles
+
+# TG 4-2-2010 Added music back in
+[music]
+music1
+
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_test
+0 330 455 320 story_test2
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+#-100 400 655 16 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -31 0
+
+[jump]
+# x y width height goto label
+-800 650 1655 32 lvl_test test
+
+
+[text]
+# x y color size TEXT
+210 60 Blue 32 Hello Mr. Fousek.
+210 100 green 20 How are you Today?
+30 360 Red 32 Dr. Majoros!
+30 430 Red 20 You Miserable Bastard!
+

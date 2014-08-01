@@ -1,0 +1,40 @@
+# Example of .lvl game level description file
+
+# Requirements
+# level name, level width and height ...
+# x, y measured from top left corner of level
+
+[level]
+#name width height default_block_type background
+lvl_story_test 455 320 tech_tiles
+
+# TG 4-2-2010 Added music back in
+[music]
+death1
+
+
+[background]
+# x, y, width, height type
+0 0 455 320 story_test
+
+
+[stationary_block]
+# x, y, width, height ... optionals: type
+#-100 400 655 16 tech_tiles
+
+
+[label]
+#name x y  ... start is required
+start -100 0
+
+[jump]
+# x y width height goto label
+-200 368 655 32 lvl_test test
+
+
+
+[text]
+# x y color size TEXT
+160 60 Blue 20 I am taking away your degree
+180 100 green 20 How do you feel about that?
+
